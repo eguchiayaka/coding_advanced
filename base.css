@@ -9,7 +9,7 @@ ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
 	font-weight: normal;
 	text-align: left;
 	list-style-type: none;
-	
+
 }
 
 .toggle-header {
@@ -40,20 +40,20 @@ body {
       padding-left: 100px;
       padding-right: 100px;
     }
-  
+
   @media (max-width: 500px) {
     .body-content {
       padding-left: 20px;
       padding-right: 20px;
     }
   }
-  
+
 
 .swiper-container {
 	max-width: 100%;
 	margin: 0 auto;
     overflow: hidden;
-
+    position: relative; 
   }
 
   .swiper-slide {
@@ -63,7 +63,18 @@ body {
 	justify-content: center;
 	align-items: center;
   }
+  .arrow-container {
+    position: absolute;
+    top: 10%;
+    transform: translateY(-50%);
+  }
   
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
   .swiper-slide img {
 	width: 100%;
@@ -71,7 +82,7 @@ body {
 	margin: 0 auto;
 	object-fit: cover;
   }
-  
+
   @media (max-width: 500px) {
 	.swiper-slide img {
 	  height: 80vw;
@@ -126,7 +137,7 @@ body {
     height: 340px;
     object-fit: cover;
   }
- 
+
   .text-container1,
   .text-container2,
   .text-container3{
@@ -172,14 +183,15 @@ body {
 
 .footer-content {
     background-color: darkgray;
-    display: grid;
+    display: flex;
+    justify-content: space-around;
     place-items: center;
     height: 100px;
   }
 
+
   @media (max-width: 576px) {
     .footer-content .col {
-      font-size: 0.6rem;
+     font-size: 0.6rem;
     }
   }
-  
